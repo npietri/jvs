@@ -1,0 +1,92 @@
+<mdb-navbar
+  SideClass="navbar navbar-expand-lg navbar-dark #a5d6a7 green lighten-3 fixed-top scrolling-navbar"
+>
+  <mdb-navbar-brand>
+    <a class="navbar-brand" routerLink="/">
+      <img
+        src="../assets/photos/logoJVC.PNG"
+        height="70"
+        class="d-inline-block align-items-center z-depth-1"
+        alt="1"
+      />
+    </a>
+  </mdb-navbar-brand>
+  <!-- Collapsible content -->
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          L'association<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Qui sommes-nous</a
+          >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Accompagnement social et professionnel</a
+          >
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Contact</a
+          >
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Nos Prestations</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Devenez adhérent</a>
+      </li>
+
+      <li
+        class="nav-item"
+        [routerLink]="['/actualite']"
+        routerLinkActive="router-link-active"
+      >
+        <a class="nav-link waves-light" routerLink="/actualite" mdbWavesEffect
+          >Actualité</a
+        >
+      </li>
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="https://www.facebook.com/associationJVS"
+          target="_blank"
+        >
+          <mdb-icon fab icon="facebook" size="2x"></mdb-icon>
+        </a>
+      </li>
+
+      <li
+        class="fb-like"
+        data-href="https://www.facebook.com/associationJVS"
+        data-width="30"
+        backgroung-color="red"
+        data-layout="button"
+        data-action="like"
+        data-size="small"
+        data-show-faces="true"
+        data-share="true"
+      ></li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
