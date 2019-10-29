@@ -5,7 +5,7 @@
     <a class="navbar-brand" routerLink="/">
       <img
         src="../assets/photos/logoJVC.PNG"
-        height="80"
+        height="50"
         class="d-inline-block align-items-center z-depth-1"
         alt="1"
       />
@@ -31,32 +31,38 @@
           class="dropdown-menu dropdown dropdown-primary"
           role="menu"
         >
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="#association"
             >Qui sommes-nous</a
           >
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="#accompagnement"
             >Accompagnement social et professionnel</a
           >
           <div class="divider dropdown-divider"></div>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#contact"
             >Contact</a
           >
         </div>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Nos Prestations</a>
+        <a class="nav-link waves-light" routerLink="/prestation" mdbWavesEffect
+          >Nos Prestations</a
+        >
       </li>
 
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Devenez adhérent</a>
+        <a class="nav-link waves-light" routerLink="/adherent" mdbWavesEffect
+          >Devenez adhérent</a
+        >
       </li>
 
-      <li
-        class="nav-item"
-        [routerLink]="['/actualite']"
-        routerLinkActive="router-link-active"
-      >
+      <li class="nav-item">
         <a class="nav-link waves-light" routerLink="/actualite" mdbWavesEffect
           >Actualité</a
         >

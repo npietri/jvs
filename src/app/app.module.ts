@@ -8,6 +8,7 @@ import { AgmCoreModule } from "@agm/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { MDBBootstrapModule } from "angular-bootstrap-md";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FormsModule } from "@angular/forms";
 import { ActualiteComponent } from "./actualite/actualite.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -15,8 +16,8 @@ import { AssociationComponent } from "./association/association.component";
 import { AdherentComponent } from "./adherent/adherent.component";
 import { PrestationComponent } from "./prestation/prestation.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from "./navbar/navbar.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FooterComponent } from './footer/footer.component';
     AgmCoreModule.forRoot({
       apiKey: "AIzaSyC8eXMauUESsEeaJCaIT0fG9drTjPpPilk"
     }),
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
