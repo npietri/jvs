@@ -1,0 +1,332 @@
+<div class="prestation">
+  <!-- cart-->
+  <div class="view view-cart">
+    <div class="row">
+      <div class="col-md-6">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="heading display-4">
+            Paniers Solidaires de légumes Bio et de Saison
+          </h1>
+          <h4 class="subheading font-weight-bold">
+            En devenant adhérent pour seulement 33€/an, optez pour l'une de nos
+            2 formules :
+          </h4>
+          <h5 class="subheading ">
+            25€/mois : deux paniers par mois <br /><br />33€/mois : trois
+            panirers par mois
+          </h5>
+
+          <button
+            [routerLink]="['/adherent']"
+            routerLinkActive="router-link-active"
+            type="button"
+            mdbBtn
+            color="lily"
+            rounded="true"
+            class="btn-margin"
+          >
+            Devenir Adhérent <i class="fas fa-caret-right ml-3"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="view ">
+          <img
+            src="../../assets/photos/panier2.jpg"
+            class="img-fluid panier-legume"
+            alt="vegetable image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- market -->
+
+  <div class="view view-market">
+    <div class="row ">
+      <div class="col-md-6" col order-last>
+        <img
+          src="../../assets/photos/marche2.jpg"
+          class="img-fluid"
+          alt="vegetable image"
+        />
+      </div>
+
+      <div class="col-md-6">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center h-100 col order-first"
+        >
+          <h1 class="heading display-5">
+            Ou rencontrez nous sur les marchés
+          </h1>
+          <h4 class="subheading font-weight-bold" align="justify">
+            - à Mouans-Sartoux : mardi et jeudi<br />- à Valbonne : vendredi
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section more  -->
+  <!--Section: Products v.2-->
+  <section class="container-fluid text-center pb-3 my-5">
+    <!--Section heading-->
+    <h2 class="h1 font-weight-bold text-center h1 py-5">
+      Notre gamme de Porduits Bio s'élargie
+    </h2>
+    <!--Section description-->
+    <p class="grey-text pb-5">
+      L'association développe accroit son offre en vous propsant de nouvelles
+      expériences gustatives.
+    </p>
+
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-3">
+        <!--Card-->
+        <mdb-card cascade="true" wider="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              src="./../../assets/photos/poulesm.jpeg"
+              alt="sample photo"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+
+            <h5 class="text-default">Oeufs</h5>
+
+            <mdb-card-text>oeufs extra frais ...</mdb-card-text>
+          </mdb-card-body>
+          <!--Card content-->
+        </mdb-card>
+        <!--Card-->
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-3">
+        <!--Card-->
+        <mdb-card cascade="true" wider="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              class="img-size"
+              src="./../../assets/photos/ptjpg.jpg"
+              alt="sample photo"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+
+            <h5 class="text-default">Produits transformés</h5>
+
+            <!--Description-->
+            <mdb-card-text>soupes, caviard d'aubergine, ect.</mdb-card-text>
+          </mdb-card-body>
+          <!--Card content-->
+        </mdb-card>
+        <!--Card-->
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-3">
+        <!--Card-->
+        <mdb-card cascade="true" wider="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              src="./../../assets/photos/huile2.jpg"
+              class="img-fluid"
+              alt="sample photo"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+
+            <h5 class="text-default">Huile d'olive</h5>
+
+            <mdb-card-title> </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>recoltes, blabla</mdb-card-text>
+            <!--Card footer-->
+          </mdb-card-body>
+          <!--Card content-->
+        </mdb-card>
+        <!--Card-->
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </section>
+  <!--Section: Products v.2-->
+
+  <!--Prestations -->
+  <section class="container-fluid text-center pb-3 my-5">
+    <!--Section heading-->
+    <h2 class="h1 font-weight-bold h1 py-5">
+      Nouvelles activités de Prestations de service
+    </h2>
+    <!--Section description-->
+    <p class="grey-text pb-5">
+      L'association forte de son expertise et en accord avec les principes
+      fondamentaux de la préservation de l'environnement propose désormais des
+      prestations de service aux collectivités et aux particuliers :
+    </p>
+
+    <!--Grid row 1-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-3">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              src="./../../assets/photos/debroussailler-terrain.jpg"
+              alt="sample photo"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Category & Title-->
+            <a href="" class="grey-text">
+              <h5>Débroussaillement</h5>
+            </a>
+            <!--Description-->
+            <mdb-card-text
+              >(Obligation Légale de Débroussaillement)/Entretien d'espaces
+              naturels : berges,...
+            </mdb-card-text>
+          </mdb-card-body>
+          <!--Card content-->
+        </mdb-card>
+        <!--activite 1 Card-->
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              src="./../../assets/photos/broyage.jpg"
+              alt="sample photo"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Category & Title-->
+            <a href="" class="grey-text">
+              <h5>Broyage à domicile de végétaux</h5>
+            </a>
+            <!--Description-->
+            <mdb-card-text>Valorisation de déchets verts </mdb-card-text>
+          </mdb-card-body>
+          <!--Card content-->
+        </mdb-card>
+        <!--activite 1 Card-->
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              src="./../../assets/photos/oliviers.jpg"
+              alt="sample photo"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Category & Title-->
+            <a href="" class="grey-text">
+              <h5>Oléiculture</h5>
+            </a>
+            <!--Description-->
+            <mdb-card-text
+              >Taille des oliviers et/ou récolte des olives
+            </mdb-card-text>
+          </mdb-card-body>
+          <!--Card content-->
+        </mdb-card>
+        <!--activite 1 Card-->
+      </div>
+
+      <!--Grid column 2-->
+      <div class="col-lg-3 col-md-6 mb-3">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              src="./../../assets/photos/animation.jpg"
+              alt="sample photo"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Category & Title-->
+            <a href="" class="grey-text">
+              <h5>Animations</h5>
+            </a>
+
+            <!--Description-->
+            <mdb-card-text
+              >formations développement durable dans le cadre scolaire et tout
+              public
+            </mdb-card-text>
+          </mdb-card-body>
+          <!--Card content-->
+        </mdb-card>
+        <!--activite 1 Card-->
+
+        <!-- activite 2 -->
+      </div>
+    </div>
+
+    <p class="grey-text pb-5">
+      Les salariés effectuant ces travaux sont qualifiés et encadrés par un
+      salarié permanent.
+    </p>
+    <!--Grid row-->
+  </section>
+  <!--Section: Products v.1-->
+</div>
