@@ -10,6 +10,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 import { ActualiteComponent } from "./actualite/actualite.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { AssociationComponent } from "./association/association.component";
@@ -35,6 +36,7 @@ import { FooterComponent } from "./footer/footer.component";
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     AgmCoreModule.forRoot({

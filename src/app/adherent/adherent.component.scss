@@ -1,14 +1,67 @@
 .form-adhesion {
   height: 100vh;
-  margin-top: 60px;
+  margin-top: 80px;
   padding-left: 20px;
   background-color: rgb(216, 235, 215);
 }
 
-.img-adhesion {
+body {
+  margin: 2em;
+}
+
+aside {
+  background: #1f8dd6;
+  /* same color as selected state on site menu */
+  padding: 0.3em 1em;
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+textarea {
   width: 100%;
 }
 
-.img-size {
-  height: 3000px;
+label {
+  margin-left: 5px;
+}
+
+.h2-form {
+  margin-top: 20px;
+}
+
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65);
+  /* this is a green */
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+button {
+  float: right;
+}
+
+#name,
+#email {
+  width: 50%;
+}
+
+.honeypot-field {
+  display: none;
 }

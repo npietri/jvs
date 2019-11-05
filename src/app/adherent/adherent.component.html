@@ -1,6 +1,8 @@
-<div class="form-adhesion">
+<!-- <div class="form-adhesion">
   <div class="row">
     <div class="form-adhesion col-xs-12 col-md-6 col-left">
+
+
       <div
         id="frm_field_34_container"
         class="frm_form_field form-field  frm_top_container"
@@ -229,4 +231,175 @@
       />
     </div>
   </div>
-</div>
+</div> -->
+
+<form
+  class="gform pure-form pure-form-stacked form-adhesion"
+  method="POST"
+  data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbypFCk133PLq-2Zt3-vEHO2JNHuGT90jKV3fTDq/exec"
+>
+  <!-- change the form action to your script url -->
+
+  <div class="form-elements">
+    <!--radio button-->
+    <fieldset class="pure-group">
+      <h2 class="h2-form ">
+        <span>1</span> Adhésion annuelle à l'association JVS :
+      </h2>
+      <input
+        id="accord-cotisation-annuelle"
+        type="radio"
+        name="accord-cotisation-annuelle"
+        value="X"
+        checked
+      />
+      <label for="accord-cotisation-annuelle">
+        cotisation annuelle <strong>33€</strong></label
+      >
+    </fieldset>
+
+    <!--radio group-->
+    <fieldset class="pure-group ">
+      <h2 class="h2-form "><span>2</span> Formules :</h2>
+      <div>
+        <input
+          id="formule--duo"
+          type="radio"
+          name="formule"
+          value="2 paniers"
+        />
+        <label for="formule--duo">
+          Formule panier <span>"duo"</span
+          ><strong class="tarif-duo"> 25 €</strong> par mois pour 2
+          paniers</label
+        >
+      </div>
+      <div>
+        <input
+          id="radio-group--trio"
+          type="radio"
+          name="formule"
+          value="3 paniers"
+        />
+        <label for="formule--trio">
+          Formule panier <span>"trio"</span
+          ><strong class="tarif-famille"> 36 €</strong> par mois pour 3
+          paniers</label
+        >
+      </div>
+    </fieldset>
+
+    <!--radio group-->
+    <fieldset class="pure-group ">
+      <h2 class="h2-form"><span>3</span> Lieux de retrait</h2>
+      <div>
+        <input
+          id="livraison"
+          type="radio"
+          name="livraison"
+          value="jeudi à JVS"
+        />
+        <label for="livraison">
+          Le jeudi à partir de 12h30 directement à JVS - Mouans-Sartoux</label
+        >
+      </div>
+      <div>
+        <input
+          id="livraison"
+          type="radio"
+          name="livraison"
+          value="jeudi, demander au prospect son site de livraison idéal"
+        />
+        <label for="livraison">
+          Le jeudi après-midi : Mougins, Mouans-sartoux, le plande Grasse,
+          Peymeinade - nous demander la liste exhaustive -</label
+        >
+      </div>
+      <div>
+        <input
+          id="livraison"
+          type="radio"
+          name="livraison"
+          value="vendredi, demander au prospect son site de livraison idéal"
+        />
+        <label for="livraison">
+          Le vendredi matin : le Cannet (Canéopole), Valbonne Garbejaire,
+          Biot</label
+        >
+      </div>
+    </fieldset>
+
+    <div class="coordonees">
+      <h2 class="h2-form"><span>4</span> Vos coordonnées</h2>
+
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="prenom">Prénom: </label>
+        <input id="prenom" name="prenom" placeholder="" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          value=""
+          required
+          placeholder="your.name@email.com"
+        />
+        <span class="email-invalid" style="display:none">
+          Must be a valid email address</span
+        >
+      </fieldset>
+
+      <!--tel-->
+      <fieldset class="pure-group">
+        <label for="telephone">Tel</label>
+        <input id="telephone" type="text" name="telephone" value="" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="adresse">Adresse: </label>
+        <input id="adresse" name="adresse" placeholder="" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="code-postal">Code Postal: </label>
+        <input id="code-postal" name="code postal" type="text" placeholder="" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="ville">Ville: </label>
+        <input id="ville" name="ville" placeholder="" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="N'hésitez pas à nous adresser une demande d'information supplémentaire"
+        ></textarea>
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send
+      </button>
+    </div>
+  </div>
+
+  <!--  Thankyou Message People See when they submit the form: -->
+  <div class="thankyou_message" style="display:none;">
+    <h2>
+      <em>Merci</em> d'avoir choisi de nous rejoindre! Nous vous contacterons
+      rapidement pour vous mettre en place vos livraisons de panier!
+    </h2>
+  </div>
+</form>
