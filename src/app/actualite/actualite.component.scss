@@ -5,33 +5,33 @@
   width: 100%;
   font-family: "Exo", sans-serif;
   color: #fff;
-  background: linear-gradient(-45deg, #a5d6a7, rgb(230, 235, 162), #a5d6a7);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background: #d1dfd1;
+
 }
-
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 
 
 .fb-page {
 
   height: 100vh;
-  margin-top: 20px;
+
   margin-bottom: 0px;
 
+}
+
+
+
+.event {
+  margin-top: 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
+
+}
+
+.actu {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }

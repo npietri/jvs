@@ -3,20 +3,36 @@
 }
 
 .view-market {
+  padding: 80px;
   margin-top: 20px;
+  background-color: #d2ebd2;
+}
+
+.view-new-prestation {
+  background-color: #d2ebd2;
 }
 
 .hm-gradient {
   background: linear-gradient(40deg, rgba(199, 221, 201, 0.3), rgba(209, 149, 249, .3));
 }
 
-.img-fluid {
-  width: 2472px;
 
+
+
+.titre-market {
+  margin-top: 15px;
+  ;
+}
+
+.img-market {
+  border-radius: 15px
 }
 
 .panier-legume {
-  height: 600px;
+  height: 550px;
+  border-radius: 50%;
+  margin-top: 15px;
+
 }
 
 .heading {
@@ -27,7 +43,7 @@
 
 .subheading {
   margin: 2.5rem 6rem;
-  color: #bcb2c0;
+  color: #6e8f68;
 }
 
 .btn.btn-margin {
@@ -36,7 +52,8 @@
 }
 
 .btn.btn-lily {
-  background: linear-gradient(40deg, rgba(168, 240, 189, 0.7), rgba(254, 255, 199, 0.849));
+  background: rgba(234, 235, 185, 0.849);
+  color: green;
 }
 
 .title {
@@ -45,9 +62,21 @@
   color: #5d4267;
 }
 
+.title-g {
+  color: rgb(115, 153, 115);
+}
+
+.title-b {
+  color: rgb(255, 254, 254);
+}
+
 .subtitle {
   color: #bcb2c0;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 6rem;
+}
+
+.p-text {
+  color: olive;
 }

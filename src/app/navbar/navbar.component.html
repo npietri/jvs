@@ -6,7 +6,7 @@
       <img
         src="../assets/photos/logoJVC.PNG"
         height="50"
-        class="d-inline-block align-items-center z-depth-1"
+        class="d-inline-block align-items-center img-nav"
         alt="1"
       />
     </a>
@@ -43,22 +43,48 @@
             href="#accompagnement"
             >Accompagnement social et professionnel</a
           >
-          <div class="divider dropdown-divider"></div>
+
           <a class="dropdown-item waves-light" mdbWavesEffect href="#contact"
             >Contact</a
           >
         </div>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link waves-light" routerLink="/prestation" mdbWavesEffect
-          >Nos Prestations</a
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          routerLink="/prestation"
+          mdbWavesEffect
         >
+          Nos prestations<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#paniers"
+            >Paniers de légumes</a
+          >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#marche"
+            >Marchés</a
+          >
+
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#gamme"
+            >Gamme de produits</a
+          >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#service"
+            >Prestation de services</a
+          >
+        </div>
       </li>
 
       <li class="nav-item">
         <a class="nav-link waves-light" routerLink="/adherent" mdbWavesEffect
-          >Devenez adhérent</a
+          >Devenir adhérent</a
         >
       </li>
 
@@ -70,7 +96,7 @@
     </ul>
     <!-- Links -->
 
-    <ul class="navbar-nav ml-auto nav-flex-icons">
+    <ul class="navbar-nav ml-auto nav-flex-icons form-inline">
       <li class="nav-item">
         <a
           class="nav-link"

@@ -1,405 +1,233 @@
-<!-- <div class="form-adhesion">
-  <div class="row">
-    <div class="form-adhesion col-xs-12 col-md-6 col-left">
+<div class="form-adhesion container-fluid">
+  <form
+    class="gform pure-form pure-form-stacked form-adhesion"
+    method="POST"
+    data-email="nicolaspietri.fr@gmail.com"
+    action="https://script.google.com/macros/s/AKfycbyr8SLqWre0u2xaxiGjADjqPnVN4JO-DNLpA67SAw6snOgXzwg/exec"
+  >
+    <!-- change the form action to your script url -->
+    <div class="form-elements row">
+      <div class="choix-panier form-adhesion col-xs-12 col-md-6 col-left ">
+        <fieldset class="pure-group">
+          <h2 class="h2-form ">
+            <img class="img-number" src="./../../assets/photos/one.png" />
+            Adhésion annuelle à l'association JVS :
+          </h2>
+          <input
+            id="accord-cotisation-annuelle"
+            type="radio"
+            name="accord-cotisation-annuelle"
+            value="X"
+            checked
+          />
+          <label for="accord-cotisation-annuelle">
+            cotisation annuelle <strong>33€</strong></label
+          >
+        </fieldset>
 
-
-      <div
-        id="frm_field_34_container"
-        class="frm_form_field form-field  frm_top_container"
-      >
-        <h2 class="h2-form">
-          <span>1</span> Adhésion annuelle à l'asociation JVS :
-        </h2>
-        <div class="frm_opt_container">
-          <div class="frm_checkbox" id="frm_checkbox_34-0">
-            <label for="field_lwjsr-0">
-              <input
-                type="checkbox"
-                name="item_meta[34][]"
-                id="field_lwjsr-0"
-                value="Je suis une personne physique : <strong>28€</strong>"
-              />
-              cotisation annuelle <strong>33€</strong></label
-            >
-          </div>
-        </div>
-      </div>
-      <div
-        id="frm_field_35_container"
-        class="frm_form_field form-field  frm_required_field frm_top_container"
-      >
-        <h2 class="h2-form"><span>2</span> Formules :</h2>
-        <div class="frm_opt_container">
-          <div class="frm_radio">
-            <label for="field_frif9-0">
-              <input
-                type="radio"
-                name="item_meta[35]"
-                id="field_frif9-0"
-                value='Formule panier <span>"duo"</span><strong class="tarif-duo"></strong> par semaine'
-                data-reqmsg="Ce champ ne peut pas être vide"
-              />
+        <!--radio group-->
+        <fieldset class="pure-group ">
+          <h2 class="h2-form ">
+            <img class="img-number" src="./../../assets/photos/two.png" />
+            Formules :
+          </h2>
+          <div>
+            <input
+              id="formule--duo"
+              type="radio"
+              name="formule"
+              value="2 paniers"
+            />
+            <label for="formule--duo">
               Formule panier <span>"duo"</span
               ><strong class="tarif-duo"> 25 €</strong> par mois pour 2
               paniers</label
             >
           </div>
-          <div class="frm_radio">
-            <label for="field_frif9-1">
-              <input
-                type="radio"
-                name="item_meta[35]"
-                id="field_frif9-1"
-                value='Formule panier <span>"Familiale"</span><strong class="tarif-famille"></strong> par semaine'
-                data-reqmsg="Ce champ ne peut pas être vide"
-              />
+          <div>
+            <input
+              id="radio-group--trio"
+              type="radio"
+              name="formule"
+              value="3 paniers"
+            />
+            <label for="formule--trio">
               Formule panier <span>"trio"</span
               ><strong class="tarif-famille"> 36 €</strong> par mois pour 3
               paniers</label
             >
           </div>
-        </div>
-      </div>
+        </fieldset>
 
-      <div
-        id="frm_field_36_container"
-        class="frm_form_field form-field  frm_required_field frm_top_container"
-      >
-        <h2 class="h2-form"><span>3</span> Lieux de retrait</h2>
-        <div class="frm_opt_container">
-          <div class="frm_radio">
-            <label for="field_ql7gi-0">
-              <input
-                type="radio"
-                name="item_meta[36]"
-                id="field_ql7gi-0"
-                value="Le mercredi matin à chateauneuf"
-                data-reqmsg="Ce champ ne peut pas être vide"
-              />
+        <!--radio group-->
+        <fieldset class="pure-group ">
+          <h2 class="h2-form">
+            <img class="img-number" src="./../../assets/photos/three.png" />
+            Lieux de retrait
+          </h2>
+          <div>
+            <input
+              id="livraison"
+              type="radio"
+              name="livraison"
+              value="jeudi à JVS"
+            />
+            <label for="livraison">
               Le jeudi à partir de 12h30 directement à JVS -
               Mouans-Sartoux</label
             >
           </div>
-
-          <div class="frm_radio">
-            <label for="field_ql7gi-1">
-              <input
-                type="radio"
-                name="item_meta[36]"
-                id="field_ql7gi-1"
-                value="Le vendredi soir à chateauneuf"
-                data-reqmsg="Ce champ ne peut pas être vide"
-              />
+          <div>
+            <input
+              id="livraison"
+              type="radio"
+              name="livraison"
+              value="jeudi, demander au prospect son site de livraison idéal"
+            />
+            <label for="livraison">
               Le jeudi après-midi : Mougins, Mouans-sartoux, le plande Grasse,
-              Peymeinade - nous demander la liste exhaustive -</label
+              Peymeinade
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="livraison"
+              type="radio"
+              name="livraison"
+              value="vendredi, demander au prospect son site de livraison idéal"
+            />
+            <label for="livraison">
+              Le vendredi matin : le Cannet (Canéopole), Valbonne Garbejaire,
+              Biot</label
             >
           </div>
-        </div>
+        </fieldset>
+
+        <p>
+          <em>
+            * Liste non exhaustive, n'hésitez pas à nous demander s'il est
+            possible de livrer à un autre point de retrait</em
+          >
+        </p>
+
+        <!-- fin div choix panier -->
       </div>
-      <div class="frm_radio">
-        <label for="field_ql7gi-0">
+
+      <div class="coordonees form-adhesion col-xs-12 col-md-6 col-right  ">
+        <h2 class="h2-form">
+          <img class="img-number" src="./../../assets/photos/four.png" /> Vos
+          coordonnées
+        </h2>
+
+        <fieldset class="pure-group">
           <input
-            type="radio"
-            name="item_meta[36]"
-            id="field_ql7gi-0"
-            value="Le mercredi matin à chateauneuf"
-            data-reqmsg="Ce champ ne peut pas être vide"
+            type="text"
+            class="form-control mb-4"
+            formControlName="contactFormName"
+            placeholder="Name"
+            id="name "
+            name="name"
           />
-          Le vendredi matin : le Cannet (Canéopole), Valbonne Garbejaire,
-          Biot</label
-        >
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input
+            id="prenom"
+            name="prenom"
+            type="text"
+            class="form-control mb-4"
+            formControlName="contactFormPrenom"
+            placeholder="Prénom"
+          />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value=""
+            required
+            class="form-control mb-4"
+            formControlName="contactFormEmail"
+            placeholder="Email"
+          />
+          <span class="email-invalid" style="display:none"
+            >l'email doit avoir un format correct</span
+          >
+        </fieldset>
+
+        <!--tel-->
+        <fieldset class="pure-group">
+          <input
+            id="telephone"
+            type="tel"
+            name="telephone"
+            value=""
+            class="form-control mb-4"
+            formControlName="contactFormTel"
+            placeholder="Téléphone"
+          />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input
+            id="adresse"
+            name="adresse"
+            class="form-control mb-4"
+            formControlName="contactFormAdress"
+            placeholder="Adresse"
+          />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input
+            id="code-postal"
+            name="code postal"
+            type="text"
+            class="form-control mb-4"
+            formControlName="contactFormPostalCode"
+            placeholder="Code Postal"
+          />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input
+            id="ville"
+            name="ville"
+            class="form-control mb-4"
+            formControlName="contactFormTown"
+            placeholder="Ville"
+          />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <textarea
+            id="message"
+            name="message"
+            formControlName="contactFormMessage"
+            class="form-control rounded-0"
+            id="exampleFormControlTextarea2"
+            rows="3"
+            placeholder="N'hésitez pas à nous adresser une demande d'information supplémentaire"
+          ></textarea>
+        </fieldset>
+
+        <button type="button" class="btn btn-outline-success">
+          envoyer
+        </button>
       </div>
 
-      <div class="coordonees">
-        <h2 class="h2-form"><span>4</span> Vos coordonnées</h2>
-        <div class="row">
-          <div
-            id="frm_field_37_container"
-            class="frm_form_field form-field  frm_required_field frm_top_container frm_half"
-          >
-            <label for="field_q1xyq" class="frm_primary_label">Nom </label>
-            <input
-              type="text"
-              id="field_q1xyq"
-              name="item_meta[37]"
-              value=""
-              data-reqmsg="Ce champ ne peut pas être vide"
-              style='background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg=="); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;'
-            />
-          </div>
-          <div
-            id="frm_field_38_container"
-            class="frm_form_field form-field  frm_required_field frm_top_container frm_half"
-          >
-            <label for="field_2c5a5" class="frm_primary_label">Prénom </label>
-            <input
-              type="text"
-              id="field_2c5a5"
-              name="item_meta[38]"
-              value=""
-              data-reqmsg="Ce champ ne peut pas être vide"
-            />
-          </div>
-          <div
-            id="frm_field_39_container"
-            class="frm_form_field form-field  frm_required_field frm_top_container frm_half"
-          >
-            <label for="field_s7rab" class="frm_primary_label">E-mail </label>
-            <input
-              type="email"
-              id="field_s7rab"
-              name="item_meta[39]"
-              value=""
-              data-reqmsg="Ce champ ne peut pas être vide"
-              data-invmsg="E-mail est non valide"
-            />
-          </div>
-          <div
-            id="frm_field_40_container"
-            class="frm_form_field form-field  frm_required_field frm_top_container frm_half"
-          >
-            <label for="field_xzm8c" class="frm_primary_label"
-              >Téléphone
-            </label>
-            <input
-              type="text"
-              id="field_xzm8c"
-              name="item_meta[40]"
-              value=""
-              data-reqmsg="Ce champ ne peut pas être vide"
-            />
-          </div>
-          <div
-            id="frm_field_41_container"
-            class="frm_form_field form-field  frm_required_field frm_top_container"
-          >
-            <label for="field_djqer" class="frm_primary_label">Adresse </label>
-            <input
-              type="text"
-              id="field_djqer"
-              name="item_meta[41]"
-              value=""
-              data-reqmsg="Ce champ ne peut pas être vide"
-            />
-          </div>
-          <div
-            id="frm_field_42_container"
-            class="frm_form_field form-field  frm_required_field frm_top_container frm_half"
-          >
-            <label for="field_687vy" class="frm_primary_label"
-              >Code postal
-            </label>
-            <input
-              type="text"
-              id="field_687vy"
-              name="item_meta[42]"
-              value=""
-              data-reqmsg="Ce champ ne peut pas être vide"
-            />
-          </div>
-          <div
-            id="frm_field_43_container"
-            class="frm_form_field form-field  frm_required_field frm_top_container frm_half"
-          >
-            <label for="field_62wf0" class="frm_primary_label">Ville </label>
-            <input
-              type="text"
-              id="field_62wf0"
-              name="item_meta[43]"
-              value=""
-              data-reqmsg="Ce champ ne peut pas être vide"
-            />
-          </div>
-          <input type="hidden" name="item_key" value="" />
-          <div class="col-xs-12">
-            <button
-              class="btn-graines btn-graines-form pull-right"
-              type="submit"
-            >
-              Envoyer
-            </button>
-          </div>
-        </div>
-      </div>
+      <!-- end  div form element  -->
     </div>
 
-    <div class="form-adhesion col-xs-12 col-md-6 col-right">
-      <img
-        class="img-fluid img-adhesion"
-        src="./../../assets/photos/growth.jpeg"
-        alt="panier"
-      />
-    </div>
-  </div>
-</div> -->
-
-<form
-  class="gform pure-form pure-form-stacked form-adhesion"
-  method="POST"
-  data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbypFCk133PLq-2Zt3-vEHO2JNHuGT90jKV3fTDq/exec"
->
-  <!-- change the form action to your script url -->
-
-  <div class="form-elements">
-    <!--radio button-->
-    <fieldset class="pure-group">
-      <h2 class="h2-form ">
-        <span>1</span> Adhésion annuelle à l'association JVS :
+    <!--  Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2 class="thankyou-mess-title">
+        <em>Merci</em> d'avoir choisi de nous rejoindre! Nous vous contacterons
+        rapidement pour vous mettre en place vos livraisons de panier!
       </h2>
-      <input
-        id="accord-cotisation-annuelle"
-        type="radio"
-        name="accord-cotisation-annuelle"
-        value="X"
-        checked
-      />
-      <label for="accord-cotisation-annuelle">
-        cotisation annuelle <strong>33€</strong></label
-      >
-    </fieldset>
-
-    <!--radio group-->
-    <fieldset class="pure-group ">
-      <h2 class="h2-form "><span>2</span> Formules :</h2>
-      <div>
-        <input
-          id="formule--duo"
-          type="radio"
-          name="formule"
-          value="2 paniers"
-        />
-        <label for="formule--duo">
-          Formule panier <span>"duo"</span
-          ><strong class="tarif-duo"> 25 €</strong> par mois pour 2
-          paniers</label
-        >
-      </div>
-      <div>
-        <input
-          id="radio-group--trio"
-          type="radio"
-          name="formule"
-          value="3 paniers"
-        />
-        <label for="formule--trio">
-          Formule panier <span>"trio"</span
-          ><strong class="tarif-famille"> 36 €</strong> par mois pour 3
-          paniers</label
-        >
-      </div>
-    </fieldset>
-
-    <!--radio group-->
-    <fieldset class="pure-group ">
-      <h2 class="h2-form"><span>3</span> Lieux de retrait</h2>
-      <div>
-        <input
-          id="livraison"
-          type="radio"
-          name="livraison"
-          value="jeudi à JVS"
-        />
-        <label for="livraison">
-          Le jeudi à partir de 12h30 directement à JVS - Mouans-Sartoux</label
-        >
-      </div>
-      <div>
-        <input
-          id="livraison"
-          type="radio"
-          name="livraison"
-          value="jeudi, demander au prospect son site de livraison idéal"
-        />
-        <label for="livraison">
-          Le jeudi après-midi : Mougins, Mouans-sartoux, le plande Grasse,
-          Peymeinade - nous demander la liste exhaustive -</label
-        >
-      </div>
-      <div>
-        <input
-          id="livraison"
-          type="radio"
-          name="livraison"
-          value="vendredi, demander au prospect son site de livraison idéal"
-        />
-        <label for="livraison">
-          Le vendredi matin : le Cannet (Canéopole), Valbonne Garbejaire,
-          Biot</label
-        >
-      </div>
-    </fieldset>
-
-    <div class="coordonees">
-      <h2 class="h2-form"><span>4</span> Vos coordonnées</h2>
-
-      <fieldset class="pure-group">
-        <label for="name">Name: </label>
-        <input id="name" name="name" placeholder="" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="prenom">Prénom: </label>
-        <input id="prenom" name="prenom" placeholder="" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="email"><em>Your</em> Email Address:</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          value=""
-          required
-          placeholder="your.name@email.com"
-        />
-        <span class="email-invalid" style="display:none">
-          Must be a valid email address</span
-        >
-      </fieldset>
-
-      <!--tel-->
-      <fieldset class="pure-group">
-        <label for="telephone">Tel</label>
-        <input id="telephone" type="text" name="telephone" value="" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="adresse">Adresse: </label>
-        <input id="adresse" name="adresse" placeholder="" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="code-postal">Code Postal: </label>
-        <input id="code-postal" name="code postal" type="text" placeholder="" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="ville">Ville: </label>
-        <input id="ville" name="ville" placeholder="" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="message">Message: </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          placeholder="N'hésitez pas à nous adresser une demande d'information supplémentaire"
-        ></textarea>
-      </fieldset>
-
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;Send
-      </button>
     </div>
-  </div>
-
-  <!--  Thankyou Message People See when they submit the form: -->
-  <div class="thankyou_message" style="display:none;">
-    <h2>
-      <em>Merci</em> d'avoir choisi de nous rejoindre! Nous vous contacterons
-      rapidement pour vous mettre en place vos livraisons de panier!
-    </h2>
-  </div>
-</form>
+  </form>
+</div>
