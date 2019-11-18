@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { AgmCoreModule } from "@agm/core";
 import { RouterModule, Routes } from "@angular/router";
+import { ScrollToModule } from "ng2-scroll-to";
 
 import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -43,6 +44,7 @@ import { FooterComponent } from "./footer/footer.component";
       apiKey: "AIzaSyC8eXMauUESsEeaJCaIT0fG9drTjPpPilk"
     }),
     RouterModule,
+    ScrollToModule.forRoot(),
     NgbModule
   ],
   providers: [],
