@@ -1,16 +1,17 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from "@angular/core";
 
 @Component({
-  selector: 'app-adherent',
-  templateUrl: './adherent.component.html',
-  styleUrls: ['./adherent.component.scss']
+  selector: "app-adherent",
+  templateUrl: "./adherent.component.html",
+  styleUrls: ["./adherent.component.scss"]
 })
 export class AdherentComponent implements OnInit {
-
-  constructor(private readonly elementRef: ElementRef) { }
+  constructor(private readonly elementRef: ElementRef) {}
 
   ngOnInit() {
-    this.elementRef.nativeElement.querySelector('.gform').addEventListener('submit', handleFormSubmit, false);
+    this.elementRef.nativeElement
+      .querySelector(".gform")
+      .addEventListener("submit", handleFormSubmit, false);
   }
 }
 
@@ -23,21 +24,24 @@ function validEmail(email: string) {
 function getFormData(form: HTMLFormElement) {
   var elements = form.elements;
 
-  var fields = Object.keys(elements).filter(function (k) {
-    return (elements[k].name !== "honeypot");
-  }).map(function (k) {
-    if (elements[k].name !== undefined) {
-      return elements[k].name;
-      // special case for Edge's html collection
-    } else if (elements[k].length > 0) {
-      return elements[k].item(0).name;
-    }
-  }).filter(function (item, pos, self) {
-    return self.indexOf(item) == pos && item;
-  });
+  var fields = Object.keys(elements)
+    .filter(function(k) {
+      return elements[k].name !== "honeypot";
+    })
+    .map(function(k) {
+      if (elements[k].name !== undefined) {
+        return elements[k].name;
+        // special case for Edge's html collection
+      } else if (elements[k].length > 0) {
+        return elements[k].item(0).name;
+      }
+    })
+    .filter(function(item, pos, self) {
+      return self.indexOf(item) == pos && item;
+    });
 
   var formData: { [id: string]: string } = {};
-  fields.forEach(function (name: string) {
+  fields.forEach(function(name: string) {
     var element = elements[name];
 
     // singular form elements just have one value
@@ -52,7 +56,7 @@ function getFormData(form: HTMLFormElement) {
           data.push(item.value);
         }
       }
-      formData[name] = data.join(', ');
+      formData[name] = data.join(", ");
     }
   });
 
@@ -65,12 +69,14 @@ function getFormData(form: HTMLFormElement) {
   return formData;
 }
 
-function handleFormSubmit(event: Event) {  // handles form submit without any jquery
-  event.preventDefault();           // we are submitting via xhr below
+function handleFormSubmit(event: Event) {
+  // handles form submit without any jquery
+  event.preventDefault(); // we are submitting via xhr below
   var form = event.target as HTMLFormElement;
-  var data = getFormData(form);         // get the values submitted in the form
+  var data = getFormData(form); // get the values submitted in the form
 
-  if (data.email && !validEmail(data.email)) {   // if email is not valid show error
+  if (data.email && !validEmail(data.email)) {
+    // if email is not valid show error
     var invalidEmail = form.querySelector(".email-invalid") as any;
     if (invalidEmail) {
       invalidEmail.style.display = "block";
@@ -80,10 +86,10 @@ function handleFormSubmit(event: Event) {  // handles form submit without any jq
     disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
+    xhr.open("POST", url);
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
       console.log(xhr.status, xhr.statusText);
       console.log(xhr.responseText);
       var formElements = form.querySelector(".form-elements") as any;
@@ -97,9 +103,11 @@ function handleFormSubmit(event: Event) {  // handles form submit without any jq
       return;
     };
     // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function (k) {
-      return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-    }).join('&');
+    var encoded = Object.keys(data)
+      .map(function(k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      })
+      .join("&");
     xhr.send(encoded);
   }
 }
@@ -111,7 +119,7 @@ function loaded() {
   for (var i = 0; i < forms.length; i++) {
     forms[i].addEventListener("submit", handleFormSubmit, false);
   }
-};
+}
 document.addEventListener("DOMContentLoaded", loaded, false);
 
 function disableAllButtons(form: HTMLFormElement) {
