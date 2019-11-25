@@ -9,4 +9,7 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  clicSurBouton(): void {
+    window.location.reload();
+  }
 }

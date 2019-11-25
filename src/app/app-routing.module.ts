@@ -10,9 +10,6 @@ import { PrestationComponent } from "./prestation/prestation.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/association", pathMatch: "full" },
-  { path: "association", component: AssociationComponent },
-
   {
     path: "prestation",
     component: PrestationComponent
@@ -25,6 +22,8 @@ const routes: Routes = [
     path: "actualite",
     component: ActualiteComponent
   },
+  { path: "", redirectTo: "/association", pathMatch: "full" },
+  { path: "association", component: AssociationComponent },
   { path: "**", component: PageNotFoundComponent }
 ];
 

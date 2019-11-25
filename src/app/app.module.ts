@@ -24,9 +24,9 @@ import { FooterComponent } from "./footer/footer.component";
 @NgModule({
   declarations: [
     AppComponent,
-    ActualiteComponent,
     AssociationComponent,
     AdherentComponent,
+    ActualiteComponent,
     PrestationComponent,
     PageNotFoundComponent,
     NavbarComponent,
@@ -38,14 +38,14 @@ import { FooterComponent } from "./footer/footer.component";
     MDBBootstrapModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: "AIzaSyC8eXMauUESsEeaJCaIT0fG9drTjPpPilk"
     }),
     RouterModule,
     ScrollToModule.forRoot(),
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
