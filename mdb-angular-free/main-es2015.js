@@ -435,17 +435,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var ng2_scroll_to__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng2-scroll-to */ "./node_modules/ng2-scroll-to/index.js");
 /* harmony import */ var ng2_scroll_to__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(ng2_scroll_to__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! angular-bootstrap-md */ "./node_modules/angular-bootstrap-md/fesm2015/angular-bootstrap-md.js");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _actualite_actualite_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./actualite/actualite.component */ "./src/app/actualite/actualite.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _association_association_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./association/association.component */ "./src/app/association/association.component.ts");
-/* harmony import */ var _adherent_adherent_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./adherent/adherent.component */ "./src/app/adherent/adherent.component.ts");
-/* harmony import */ var _prestation_prestation_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./prestation/prestation.component */ "./src/app/prestation/prestation.component.ts");
-/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
-/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! angular-bootstrap-md */ "./node_modules/angular-bootstrap-md/fesm2015/angular-bootstrap-md.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _actualite_actualite_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./actualite/actualite.component */ "./src/app/actualite/actualite.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _association_association_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./association/association.component */ "./src/app/association/association.component.ts");
+/* harmony import */ var _adherent_adherent_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./adherent/adherent.component */ "./src/app/adherent/adherent.component.ts");
+/* harmony import */ var _prestation_prestation_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./prestation/prestation.component */ "./src/app/prestation/prestation.component.ts");
+/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+
 
 
 
@@ -473,30 +475,30 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-            _association_association_component__WEBPACK_IMPORTED_MODULE_14__["AssociationComponent"],
-            _adherent_adherent_component__WEBPACK_IMPORTED_MODULE_15__["AdherentComponent"],
-            _actualite_actualite_component__WEBPACK_IMPORTED_MODULE_12__["ActualiteComponent"],
-            _prestation_prestation_component__WEBPACK_IMPORTED_MODULE_16__["PrestationComponent"],
-            _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_17__["PageNotFoundComponent"],
-            _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_18__["NavbarComponent"],
-            _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"]
+            _association_association_component__WEBPACK_IMPORTED_MODULE_15__["AssociationComponent"],
+            _adherent_adherent_component__WEBPACK_IMPORTED_MODULE_16__["AdherentComponent"],
+            _actualite_actualite_component__WEBPACK_IMPORTED_MODULE_13__["ActualiteComponent"],
+            _prestation_prestation_component__WEBPACK_IMPORTED_MODULE_17__["PrestationComponent"],
+            _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_18__["PageNotFoundComponent"],
+            _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_19__["NavbarComponent"],
+            _footer_footer_component__WEBPACK_IMPORTED_MODULE_20__["FooterComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
-            angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_9__["MDBBootstrapModule"].forRoot(),
-            _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_11__["ReactiveFormsModule"],
+            angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_10__["MDBBootstrapModule"].forRoot(),
+            _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
             _agm_core__WEBPACK_IMPORTED_MODULE_6__["AgmCoreModule"].forRoot({
                 apiKey: "AIzaSyC8eXMauUESsEeaJCaIT0fG9drTjPpPilk"
             }),
             _angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"],
             ng2_scroll_to__WEBPACK_IMPORTED_MODULE_8__["ScrollToModule"].forRoot(),
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NgbModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_13__["AppRoutingModule"]
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_11__["NgbModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_14__["AppRoutingModule"]
         ],
-        providers: [],
+        providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_9__["HashLocationStrategy"] }],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
