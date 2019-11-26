@@ -1,8 +1,10 @@
 {
   "name": "jvs",
   "version": "8.1.1",
+  "author": "nicolas",
+  "homepage": "https://npietri.github.io/jvs",
   "scripts": {
-    "deploy": "gh-pages -d src",
+    "deploy": "gh-pages -d build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -55,14 +57,12 @@
     "typescript": "~3.4.3"
   },
   "license": "MIT",
-  "homepage": "https://npietri.github.io/jvs",
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.",
   "main": "karma.conf.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/npietri/jvs.git"
   },
-  "author": "nicolas",
   "bugs": {
     "url": "https://github.com/npietri/jvs/issues"
   }
