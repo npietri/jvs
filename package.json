@@ -4,7 +4,7 @@
   "author": "nicolas",
   "homepage": "https://npietri.github.io/jvs",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
