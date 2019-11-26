@@ -2,7 +2,7 @@
   "name": "jvs",
   "version": "8.1.1",
   "author": "nicolas",
-  "homepage": "https://npietri.github.io/jvs",
+  "homepage": "https://npietri.github.io/jvs/",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "ng": "ng",
