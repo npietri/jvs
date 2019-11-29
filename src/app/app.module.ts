@@ -7,6 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AgmCoreModule } from "@agm/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ScrollToModule } from "ng2-scroll-to";
+import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -47,7 +48,7 @@ import { FooterComponent } from "./footer/footer.component";
     NgbModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

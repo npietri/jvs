@@ -6,8 +6,8 @@
       <img
         src="../assets/photos/logoJVC.PNG"
         height="50"
-        class="d-inline-block align-items-center img-nav"
-        alt="1"
+        class="d-inline-block align-top"
+        alt="logoJVC"
       />
     </a>
   </mdb-navbar-brand>
@@ -16,14 +16,13 @@
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <!-- Dropdown -->
-      <li class="nav-item active dropdown" dropdown>
+      <li class="nav-item dropdown" dropdown>
         <a
           dropdownToggle
           mdbWavesEffect
           type="button"
           class="nav-link dropdown-toggle waves-light"
           mdbWavesEffect
-          routerLink="/"
         >
           L'association<span class="caret"></span
         ></a>
@@ -31,6 +30,7 @@
           *dropdownMenu
           class="dropdown-menu dropdown dropdown-primary"
           role="menu"
+          routerLink="/"
         >
           <a
             class="dropdown-item waves-light"
@@ -63,7 +63,6 @@
           mdbWavesEffect
           type="button"
           class="nav-link dropdown-toggle waves-light"
-          routerLink="/prestation"
           mdbWavesEffect
         >
           Nos prestations<span class="caret"></span
@@ -72,6 +71,7 @@
           *dropdownMenu
           class="dropdown-menu dropdown dropdown-primary"
           role="menu"
+          routerLink="/prestation"
         >
           <a
             class="dropdown-item waves-light"
@@ -111,13 +111,12 @@
         >
       </li>
 
-      <li class="nav-item dropdown" dropdown>
+      <li class="nav-item dropdown" dropdown routerLink="/actualite">
         <a
           dropdownToggle
           mdbWavesEffect
           type="button"
           class="nav-link dropdown-toggle waves-light"
-          routerLink="/actualite"
           mdbWavesEffect
         >
           Actualité<span class="caret"></span
