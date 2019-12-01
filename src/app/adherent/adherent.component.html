@@ -209,13 +209,29 @@
             formControlName="contactFormMessage"
             class="form-control rounded-0"
             id="exampleFormControlTextarea2"
-            rows="3"
+            rows="2"
             placeholder="N'hésitez pas à nous adresser une demande d'information supplémentaire"
           ></textarea>
         </fieldset>
 
+        <fieldset class="pure-group consentement">
+          <input
+            class="consentementBouton"
+            id="consentement"
+            type="radio"
+            name="accord-cotisation-annuelle"
+            value="X"
+          />
+          <label for="consentement">
+            Consentement quant à l'usage de vos données personnelles **</label
+          >
+          <span class="consentementInvalid" style="display:none"
+            >Vous devez consentir à ce que nous utilisions vos ccordonnées</span
+          >
+        </fieldset>
+
         <button class="btn btn-outline-success button-success ">
-          envoyer **
+          envoyer
         </button>
       </div>
 
